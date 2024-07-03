@@ -1,0 +1,34 @@
+section.hero.js-hero-slider-wrapper
+	.hero__slider_w
+		.hero__nav(aria-label="slider navigation")
+			.hero__controls_w
+				.hero__nav_numbers.js-hero-slider-numbers(aria-label="slide number") 1 / 6
+				.hero__nav_arrow
+					button.slider_navigation.slider_navigation--prev_mod.js-slider-navigation-prev(class=buttonMod type="button" aria-label="Prev slide")
+						+icon('arrow', 'icon--size_mod icon--slider')
+					button.slider_navigation.slider_navigation--next_mod.js-slider-navigation-next(class=buttonMod type="button" aria-label="Next slide")
+						+icon('arrow', 'icon--size_mod icon--slider')
+		.hero__slider_list.js-hero-slider(role='slider')
+			.hero__slider_item
+				+picture({
+					img: `hero/0.jpg`,
+					class: 'hero__img_w',
+					img_class: 'hero__img',
+					alt: 'some image',
+				})
+				.hero__slider_decor(aria-hidden="true")
+				.hero__content
+					.hero__logo
+						img(src="../images/logo-green.svg", alt="company logo")
+					.hero__info
+						.hero__subtitle 26 December 2023
+						.hero__title= 'Moët & Chandon Auckland Cup Day '
+						.hero__descr= 'High-octane racing, hospitality & family entertainment combine to bring you this iconic occasion. '
+						.hero__btn_list
+							.hero__btn_w
+								a(href="#").btn_green.hero__btn Buy Tickets
+							.hero__btn_w
+								a(href="#").btn_base.hero__btn Learn more
+
+
+

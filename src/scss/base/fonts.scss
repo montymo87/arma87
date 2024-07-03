@@ -1,1 +1,5 @@
-@include font_face('RobotoCondensed-Regular', 'RobotoCondensed', $font_path, 400);
+@include font_face('Gilroy-Regular', 'Gilroy', $font_path, 400);
+@include font_face('Gilroy-Bold', 'Gilroy', $font_path, 700);
+@include font_face('Gilroy-Heavy', 'Gilroy', $font_path, 800);
+@include font_face('Gilroy-Light', 'Gilroy', $font_path, 300);
+@include font_face('Gilroy-Medium', 'Gilroy', $font_path, 500);
